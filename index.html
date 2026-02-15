@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Generative AI for Work &amp; Research — Portfolio | Lucia González Fernández</title>
-  <meta name="description" content="One page portfolio for the Generative AI for Work &amp; Research course, featuring About Me, About the Course, and Weekly Submissions." />
+  <meta name="description" content="One page portfolio for the Generative AI for Work &amp; Research course, featuring About Me, About the Course, Weekly Submissions, and a Consultation Contact Form." />
   <meta name="color-scheme" content="light dark" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🤖</text></svg>">
 
@@ -181,6 +181,29 @@
 
     [data-reveal]{opacity:0; transform: translateY(12px); transition: .6s ease}
     [data-reveal].visible{opacity:1; transform:none}
+
+    /* ========= CONSULTATION FORM ========= */
+    .form-embed{
+      width: 100%;
+      max-width: 980px;
+      margin: 14px auto 0;
+      border: 1px solid var(--stroke);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-1);
+      background: var(--card);
+    }
+    .form-embed iframe{
+      display:block;
+      width:100%;
+      height:820px;
+      border:0;
+    }
+    @media (max-width: 720px){
+      .form-embed iframe{
+        height:920px;
+      }
+    }
   </style>
 </head>
 
@@ -196,6 +219,7 @@
           <li><a href="#about-me">About me</a></li>
           <li><a href="#about-course">About the course</a></li>
           <li><a href="#submissions">Weekly submissions</a></li>
+          <li><a href="#consultation">Consultation</a></li>
         </ul>
       </nav>
     </div>
@@ -213,6 +237,7 @@
           <div class="cta">
             <a class="btn" href="#submissions">View weekly work</a>
             <a class="btn secondary" href="#about-course">About the course</a>
+            <a class="btn secondary" href="#consultation">Consultation</a>
           </div>
         </article>
       </div>
@@ -326,7 +351,7 @@
           </p>
         </article>
 
-        <!-- ✅ UPDATED: Week 3 now includes your Job Market report link -->
+        <!-- Week 3 -->
         <article class="card" data-reveal>
           <h3>Week 3 — Job Market Data Analysis</h3>
           <p>
@@ -374,6 +399,34 @@
           <p class="meta"><a href="https://thegraphcourses.org/aiw/" target="_blank" rel="noopener">Course reference →</a></p>
         </article>
       </div>
+    </section>
+
+    <!-- ✅ NEW: CONSULTATION SECTION -->
+    <section id="consultation" class="wrap" aria-labelledby="consultation-h">
+      <article class="card" data-reveal>
+        <h2 id="consultation-h">Contact for Consultation</h2>
+        <p class="lead">
+          Use the form below to request a consultation. I’ll review your message and follow up as soon as possible.
+        </p>
+
+        <div class="form-embed" aria-label="Consultation request form">
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLScoe6nE4XpVUKNnz6JZodhgjqLrgTgOv90xsG9qcbSkUPiLQQ/viewform?embedded=true"
+            width="640"
+            height="808"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            title="Consultation Request Form"
+          >Loading…</iframe>
+        </div>
+
+        <p style="margin-top:14px; color: var(--muted); font-size: 0.95rem;">
+          If the embedded form doesn’t load, open it directly:
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScoe6nE4XpVUKNnz6JZodhgjqLrgTgOv90xsG9qcbSkUPiLQQ/viewform"
+             target="_blank" rel="noopener">Consultation form</a>.
+        </p>
+      </article>
     </section>
   </main>
 
